@@ -30,6 +30,7 @@ Repositorio GitHub:
 
 -bash (Terminal)
 git clone https://github.com/CarloVG/Examen_Delta-Data.git
+
 cd Examen_Delta-Data
 
 # 2. Crear un entorno virtual (Recomendado)
