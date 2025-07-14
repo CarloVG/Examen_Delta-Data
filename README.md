@@ -48,6 +48,18 @@ pip install flask
 
 pip install -r requirements.txt
 
+# 4.1 
+Si al momento de iniciar la app con python app.py o flask --app app --debug run les arroja un error, deben checar los archivos de la carpeta donde estan con el comando "dir"
+si este les arroja 3 archivos solamente:
+d-----     13/07/2025  09:12 p. m.                .venv
+
+d-----     13/07/2025  09:07 p. m.                env
+
+d-----     13/07/2025  09:03 p. m.                Examen_Delta-Data
+
+La app esta en la carpeta Examen_Delta-Data, asi que solo se debe cambiar de directorio con: "cd .\Examen_Delta-Data\", y volver a correr con flask --app app --debug run, asi
+arrojara la direccion ip donde se esta ejecutando el programa
+
 # 5. Ejecutar la aplicacion (pagina web)
 python app.py
 
