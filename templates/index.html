@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Registro de Créditos</title>
+ <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <h1>Registro de Créditos</h1>
+
+  <form id="formulario">
+    <input type="text" id="cliente" placeholder="Nombre del cliente" required />
+    <input type="number" id="monto" placeholder="Monto" required />
+    <input type="number" id="tasa_interes" placeholder="Tasa de interés (%)" step="0.01" required />
+    <input type="number" id="plazo" placeholder="Plazo (meses)" required />
+    <input type="date" id="fecha_otorgamiento" required />
+    <button type="submit">Registrar</button>
+  </form>
+
+  <h2>Créditos registrados</h2>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Cliente</th>
+        <th>Monto</th>
+        <th>Tasa</th>
+        <th>Plazo</th>
+        <th>Fecha</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody id="tabla-creditos">
+      
+    </tbody>
+  </table>
+
+ <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+<!-- Llama Chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<!-- Gráfica de créditos por cliente -->
+<h2>Créditos por Cliente</h2>
+<canvas id="graficaCreditos" width="600" height="300"></canvas>
+
+</body>
+</html>
