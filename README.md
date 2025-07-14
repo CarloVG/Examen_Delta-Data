@@ -1,6 +1,8 @@
 # Registro de Créditos 
 -Autor: Carlo Vargas González
+
 -Examen Tecnico|13 de Julio 2025
+
 -Delta Data 
 
 Este proyecto es una aplicación web desarrollada en Python con Flask y base de datos SQLite como parte del examen técnico para Delta Data Consulting.  
@@ -51,6 +53,7 @@ pip install -r requirements.txt
 # 4.1 
 Si al momento de iniciar la app con python app.py o flask --app app --debug run les arroja un error, deben checar los archivos de la carpeta donde estan con el comando "dir"
 si este les arroja 3 archivos solamente:
+
 d-----     13/07/2025  09:12 p. m.                .venv
 
 d-----     13/07/2025  09:07 p. m.                env
